@@ -6,5 +6,5 @@ if [ ! -d "./Backup" ]; then
 else
     echo "Backup directory exists."
 fi
-    cp -rn *.txt ./Backup # Copy all .txt files into Backup directory. -n will skip files that already exist.
+    cp -rn Arena/*.txt ./Backup # Copy all .txt files into Backup directory. -n will skip files that already exist.
     echo "Text files successfully copied into Backup directory."
