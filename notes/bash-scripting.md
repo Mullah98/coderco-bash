@@ -88,9 +88,12 @@
 
 **Set options:**
 
+- **`echo $?`** – Show exit code
+- **`exit 1 / exit 2`** – Error codes
+
 - **`set -e`** – Stop on error
 - **`set -u`** – Stop on uninitialized variables
-- **`set -x`** – Print commands before execution
+- **`set -x`** – Print commands before execution (debug mode)
 - **`set -eux`** – Combine all three
 
 ---
@@ -121,16 +124,6 @@
 **Piping:**
 
 - **`local fileCount=$(ls "$directory" | wc -l)`** – Pass output of first command to the second command
-
-**Error Handling:**
-
-- **`echo $?`** – Show exit code
-- **`exit 1 / exit 2`** – Error codes
-
-- **`set -e`** – Exit script immediately if any commands file (return non-zero exit code)
-- **`set -u`** – Stop script if it tries to use uninitialized variable
-- **`set -x`** – Enable debug mode, printing each command before execution
-- **`set -eux`** – Combine all 3 options
 
 ---
 
